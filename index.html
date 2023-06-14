@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlayFab App</title>
+</head>
+<body>
+  <div id="login-container">
+    <h1>Login</h1>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="login-btn">Login</button>
+  </div>
+
+  <div id="home-container" style="display: none;">
+    <h1>Welcome, <span id="username"></span>!</h1>
+    <button id="weather-btn">Show Weather</button>
+    <button id="history-btn">Temperature History</button>
+    <button id="store-name-btn">Store Name</button>
+    <button id="logout-btn">Logout</button>
+    <div id="weather-container" style="display: none;">
+      <h2>Current Weather</h2>
+      <p id="temperature"></p>
+    </div>
+    <div id="history-container" style="display: none;">
+      <h2>Temperature History</h2>
+      <ul id="temperature-history"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Update the script src to correctly reference the bundle file -->
+</body>
+</html>
